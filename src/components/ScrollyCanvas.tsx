@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 
-const FRAME_COUNT = 120; // 0 to 119
+const FRAME_COUNT = 128; // 0 to 127
 
 export default function ScrollyCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -30,7 +30,7 @@ export default function ScrollyCanvas() {
     for (let i = 0; i < FRAME_COUNT; i++) {
       const img = new Image();
       const paddedIndex = i.toString().padStart(3, "0");
-      img.src = `/sequence/frame_${paddedIndex}_delay-0.07s.webp`;
+      img.src = `/sequence/frame_${paddedIndex}_delay-0.2s.webp`;
       img.onload = () => {
         loadedCount++;
         if (loadedCount === FRAME_COUNT) {
