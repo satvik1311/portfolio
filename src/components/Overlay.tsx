@@ -56,7 +56,7 @@ export default function Overlay() {
             <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 via-black to-neutral-700 drop-shadow-[0_5px_15px_rgba(255,255,255,0.7)]">
               Bridging <span className="text-neutral-600 italic font-medium">design</span> and engineering.
             </h2>
-            <p className="mt-6 text-base md:text-lg font-medium text-neutral-900 drop-shadow-[0_2px_10px_rgba(255,255,255,0.6)]">
+            <p className="mt-6 text-lg md:text-xl font-bold italic text-neutral-900 drop-shadow-[0_2px_15px_rgba(255,255,255,0.8)] leading-relaxed">
               Focusing on the intersection of intuitive interfaces and intelligent, AI-driven backend architectures.
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function Overlay() {
             <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 via-black to-neutral-700 drop-shadow-[0_5px_15px_rgba(255,255,255,0.7)]">
               Empowered by <span className="text-neutral-600 italic font-medium">AI</span>.
             </h2>
-            <p className="mt-6 text-base md:text-lg font-medium text-neutral-900 drop-shadow-[0_2px_10px_rgba(255,255,255,0.6)]">
+            <p className="mt-6 text-lg md:text-xl font-bold italic text-neutral-900 drop-shadow-[0_2px_15px_rgba(255,255,255,0.8)] leading-relaxed">
               Leveraging machine learning, generative AI, and computer vision to solve real-world problems.
             </p>
           </div>
