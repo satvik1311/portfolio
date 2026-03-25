@@ -33,7 +33,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="relative z-20 w-full min-h-screen py-24 px-8 md:px-24">
+    <section className="relative z-20 w-full min-h-screen py-12 md:py-24 px-4 sm:px-8 md:px-16 lg:px-24">
       <div className="max-w-7xl mx-auto">
         <div className="mb-20">
           <h2 className="text-3xl md:text-5xl font-semibold text-white tracking-tight">
@@ -44,14 +44,14 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, idx) => (
             <a
               key={idx}
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex flex-col justify-between overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-8 md:p-12 transition-all duration-500 hover:bg-white/10 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] backdrop-blur-md cursor-pointer min-h-[320px] block"
+              className="group relative flex flex-col justify-between overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-6 sm:p-8 md:p-12 transition-all duration-500 hover:bg-white/10 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] backdrop-blur-md cursor-pointer min-h-[320px] block"
             >
               <div>
                 <div className="flex justify-between items-start mb-6">

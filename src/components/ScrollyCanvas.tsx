@@ -74,9 +74,18 @@ export default function ScrollyCanvas() {
 
   useEffect(() => {
     if (imagesLoaded) {
-      drawImage(0); // Draw first frame initially
+      drawImage(Math.round(frameIndex.get())); // Draw current frame initially/on-load
     }
-  }, [imagesLoaded]);
+
+    const handleResize = () => {
+      if (imagesLoaded) {
+        drawImage(Math.round(frameIndex.get()));
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [imagesLoaded, frameIndex]);
 
   useMotionValueEvent(frameIndex, "change", (latest) => {
     if (imagesLoaded) {

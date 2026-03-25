@@ -23,7 +23,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="relative z-20 w-full py-24 px-8 md:px-24">
+    <section className="relative z-20 w-full py-12 md:py-24 px-4 sm:px-8 md:px-16 lg:px-24">
       <div className="max-w-4xl mx-auto">
         <div className="mb-16">
           <h2 className="text-3xl md:text-5xl font-semibold text-white tracking-tight">
@@ -34,11 +34,11 @@ export default function Skills() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, idx) => (
             <div
               key={idx}
-              className="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-8 transition-all duration-500 hover:bg-white/10 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(255,255,255,0.03)] backdrop-blur-md"
+              className="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-6 sm:p-8 transition-all duration-500 hover:bg-white/10 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(255,255,255,0.03)] backdrop-blur-md"
             >
               <h3 className="text-lg text-white font-medium mb-6 uppercase tracking-widest group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-neutral-500 transition-all duration-300">
                 {category.title}

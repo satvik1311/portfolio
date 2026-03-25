@@ -41,7 +41,7 @@ export default function Experience() {
   ];
 
   return (
-    <section className="relative z-20 w-full py-24 px-8 md:px-24">
+    <section className="relative z-20 w-full py-12 md:py-24 px-4 sm:px-8 md:px-16 lg:px-24">
       <div className="max-w-4xl mx-auto">
         <div className="mb-16">
           <h2 className="text-3xl md:text-5xl font-semibold text-white tracking-tight">
@@ -56,7 +56,7 @@ export default function Experience() {
           {experiences.map((exp, idx) => (
             <div
               key={idx}
-              className="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-8 md:p-10 transition-all duration-500 hover:bg-white/10 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] backdrop-blur-md"
+              className="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-6 md:p-10 transition-all duration-500 hover:bg-white/10 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] backdrop-blur-md"
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6 gap-4 md:gap-0">
                 <div>
