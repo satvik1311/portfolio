@@ -3,7 +3,7 @@ import { MoveRight } from "lucide-react";
 export default function Projects() {
   const projects = [
     {
-      title: "Ai Memory Vault",
+      title: "InnerSync AI",
       category: "AI-Powered Web Application",
       year: "2026",
       description: "An AI-driven platform that lets users capture thoughts, memories, and goals while interacting with a simulated future self, powered by Generative AI to provide insights, motivation, and long-term perspective.",
